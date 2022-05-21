@@ -3,8 +3,8 @@
 
 {% block sub_content %}
 <div class="col-6 mx-auto">
-  <h1 class="h3">Create/Edit Address</h1>
-  <div>Add a new delivery <b>address</b> and delivery preferences</div>
+  <h1 class="h3">Create Address</h1>
+  <div>Add a new delivery <b>address</b> </div>
   <hr />
   <form name="address_form" class="account-form" method="post" enctype="multipart/form-data">
     {% if form.errors %}
@@ -19,8 +19,6 @@
     {{ form.phone }}
     <label class="small fw-bold">{{ form.address_line.label}}</label>
     {{ form.address_line }}
-    <label class="small fw-bold">{{ form.address_line2.label}}</label>
-    {{ form.address_line2 }}
     <label class="small fw-bold">{{ form.town_city.label}}</label>
     {{ form.town_city }}
     <label class="small fw-bold">{{ form.postcode.label}}</label>
