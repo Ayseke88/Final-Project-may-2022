@@ -1,7 +1,22 @@
 {% extends "./sub_base.html" %}
 {% block title %}Log-in{% endblock %}
 {% block sub_content %}
+<div class="main">
+</div>
+<style>
+  @media only screen and (max-width: 767px) {
+  .main {
+    min-height: 5.2rem;
+    background: transparent;
+  }
+}
 
+@media only screen and (max-width: 288px) {
+  .main {
+    min-height: 7.1rem;
+    background: transparent;
+  }
+}</style>
 <form class="account-form" action="{% url 'account:login' %}" method="post">
   {% csrf_token %}
   <h3 class="mb-4">Sign In</h3>
