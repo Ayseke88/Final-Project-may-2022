@@ -12,54 +12,53 @@
 {#DO NOT TOUCH IT  ///////////// DO NOT TOUCH IT  ///////////// DO NOT TOUCH IT #}
 <style>
   .video-container {
-      max-height: 41rem;
-      position: relative;
-      overflow: hidden;
+    max-height: 41rem;
+    position: relative;
+    overflow: hidden;
   }
-  .card-img-top{
-    width: 307px; 
+
+  .card-img-top {
+    width: 307px;
     height: 307px;
     object-fit: cover;
-  }    
-  
-
-
-
+  }
 
   video {
-      object-fit: cover; // Set the magic
-      position: absolute;
-      max-height: 41rem;
-      width: 100%;
-      top: 0;
-      left: 0;
+    object-fit: cover; // Set the magic
+    position: absolute;
+    max-height: 41rem;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 
   @media only screen and (max-width: 767px) {
-      .main{
-          min-height: 5.2rem;
-          background: red;
-      }
-  }
-  @media only screen and (max-width: 288px) {
-      .main{
-          min-height: 7.1rem;
-          background: red;
-      }
-  }
-  @media only screen and (max-width: 251px) {
-      .main{
-          min-height: 10.2rem;
-          background: red;
-          }
-  }
-  @media only screen and (max-width: 176px) {
-      .main{
-          min-height: 13.7rem;
-          background: red;
-          }
+    .main {
+      min-height: 5.2rem;
+      background: red;
+    }
   }
 
+  @media only screen and (max-width: 288px) {
+    .main {
+      min-height: 7.1rem;
+      background: red;
+    }
+  }
+
+  @media only screen and (max-width: 251px) {
+    .main {
+      min-height: 10.2rem;
+      background: red;
+    }
+  }
+
+  @media only screen and (max-width: 176px) {
+    .main {
+      min-height: 13.7rem;
+      background: red;
+    }
+  }
 </style>
 
 <div class="album py-5 bg-light">
@@ -70,7 +69,8 @@
         <div class="card mb-4 box-shadow">
           <img class="card-img-top" src="media/retro.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">In simple words, vinyl records are simply rotating disks that are used for storing music. 
+            <p class="card-text">In simple words, vinyl records are simply rotating disks that are used for storing
+              music.
               Buy vinyls now in our shop
             </p>
             <div class="d-flex justify-content-between align-items-center">
@@ -80,9 +80,10 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" src="media/kpop.jpg" alt="Card image cap" >
+          <img class="card-img-top" src="media/kpop.jpg" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Listen to the latest realeses with us! Enjoy the new albums of K-pop! Go to the concerts. You can win the tickets.
+            <p class="card-text">Listen to the latest realeses with us! Enjoy the new albums of K-pop! Go to the
+              concerts. You can win the tickets.
               Follow our Instagram
             </p>
             <div class="d-flex justify-content-between align-items-center">
@@ -94,7 +95,8 @@
         <div class="card mb-4 box-shadow">
           <img class="card-img-top" src="media/camila.png" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Watc music clip with us! Just follow our youtube channel. The fastest reactions to your pleasement.
+            <p class="card-text">Watc music clip with us! Just follow our youtube channel. The fastest reactions to your
+              pleasement.
               Everything for you!
             </p>
             <div class="d-flex justify-content-between align-items-center">
@@ -102,7 +104,9 @@
           </div>
         </div>
       </div>
-
+    </div>
+  </div>
+</div>
 
 <div class="container">
   <div class="container">
@@ -139,5 +143,5 @@
       </div>
     </div>
   </div>
-
-  {% endblock %}
+</div>
+{% endblock %}
