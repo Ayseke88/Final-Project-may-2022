@@ -13,6 +13,13 @@
   <hr />
 </div>
 
+{% if messages %}
+<div class="alert alert-warning" alert-{{ message.tags }}" role="alert">
+  {% for message in messages  %}
+    {{message|safe}}
+  {% endfor %}
+ </div>
+{% endif %}
 
 <div class="container row justify-content-center">
   <div class="col-9">
@@ -42,6 +49,10 @@
       {% endfor %}
     </div>
   </div>
+
+
+
+
   {% if deliveryoptions|length == 0 %}
   <div class="col-12">There are no delivery options <a href="{% url 'store:store_home' %}">Shop</a></div>
   {% else %}

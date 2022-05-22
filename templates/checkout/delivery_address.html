@@ -18,9 +18,11 @@
   <div class="row g-3">
     {% if addresses|length == 0 %}
     <div class="col-12">There are no delivery addresses, <a href="{% url 'account:add_address' %}">add address</a></div>
+   
     {% else %}
     <div class="col-md-4 col-lg-4 order-md-last p-0 order-3" style="margin-top:-30px;" >
       <hr / style="margin-top:-15px;">
+    
 <div class="d-flex bd-highlight ms-0"  >
   <div class="p-2 flex-grow-1 bd-highlight">Sub Total:</div>
   <div class="p-2 bd-highlight"><span class="fw-bold h5">£</span><span id="sub_total"class="fw-bold h5">{{basket.get_subtotal_price}}</span></div>
@@ -38,6 +40,7 @@
     
     <div class="row-md-7 row-lg-8" >
       {% for address in addresses %}
+      
       {% if not address.default %}
         <h1 class="h5 pt-4">Other Addresses</h1>
       {% endif %}
@@ -45,12 +48,14 @@
         <div class="row g-0">
           <div class="col">
             <div class=" pb-3 rounded-0">
-              <div class="card-header bg-light small text-muted" style="width:315px;">
+              <div class="card-header bg-light small text-muted" style="width:315px; margin-bottom:-170px;">
                 {% if address.default %}
                 Selected
                 {% endif %}
                 &nbsp;
               </div>
+              <img class="" src="/media/address.jpg" width="380px" alt="Responsive image" style="margin-bottom:-370px; 
+  margin-left:600px;"/>  
               <div class="card-body  pb-1">
                 <p class="card-text m-0 fw-bold">{{address.full_name}}</p>
                 <p class="card-text m-0">{{address.address_line}}</p>
@@ -74,9 +79,8 @@
     {% endif %}
   </div>
 
-  <img class="" src="/media/address.jpg" width="380px" alt="Responsive image" style="margin-top:-470px; 
-  margin-left:600px;"/>  
-                 
+  
+                  
 
 </div>
 

@@ -4,16 +4,17 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.sites.shortcuts import get_current_site
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import redirect, render
-
+from django.shortcuts import get_object_or_404
+from django.template.loader import render_to_string
 from django.urls import reverse
 
-from orders.models import Order
+from orders.models import Order, OrderItem  
 from orders.views import user_orders
 from store.models import Product
 
 from .forms import RegistrationForm, UserAddressForm
 from .models import Address, Customer
-
+from .token import account_activation_token
 
 @login_required
 def dashboard(request):
@@ -22,8 +23,10 @@ def dashboard(request):
 
 
 def account_register(request):
+
     if request.user.is_authenticated:
         return redirect('account:dashboard')
+
     if request.method == 'POST':
         registerForm = RegistrationForm(request.POST)
         if registerForm.is_valid():
