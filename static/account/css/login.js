@@ -13,9 +13,9 @@ window.onload = function() {
         });
     }
     if (window.innerHeight < 720 || window.innerWidth < 920) {
-        TweenMax.to("#kc-container-wrapper", 0.6, { ease: Back.easeOut.config(1.7), xPercent: -50, yPercent: 0, left: "50%", top: "30px", transformOrigin: "50% 50%", x: 0, y: 0 });
+        TweenMax.to("#kc-container-wrapper", 0.6, { ease: Back.easeOut.config(1.7), xPercent: -50, yPercent: 0, left: "50%", top: "100px", transformOrigin: "50% 50%", x: 0, y: 0 });
     } else {
-        TweenMax.to("#kc-container-wrapper", 0.6, { ease: Back.easeOut.config(1.7), xPercent: -50, yPercent: -50, left: "50%", top: "50%", transformOrigin: "50% 50%", x: 0, y: 0 });
+        TweenMax.to("#kc-container-wrapper", 0.6, { ease: Back.easeOut.config(1.7), xPercent: -50, yPercent: -50, left: "50%", top: "70%", transformOrigin: "50% 50%", x: 0, y: 0 });
     }
 
     window.addEventListener('resize', function() {

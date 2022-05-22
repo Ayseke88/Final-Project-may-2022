@@ -1,6 +1,6 @@
-{% extends "./sub_base.html" %}
+<!-- {% extends "./sub_base.html" %}
 {% block title %}Log-in{% endblock %}
-{% block sub_content %}
+{% block sub_content %} -->
 
 <link rel="stylesheet" href="/static/account/css/login.css">
 <script src="/static/account/css/login.js"></script>
@@ -188,7 +188,22 @@
                 <div class="form-group">
                   <div id="kc-form-options" class="halfwidth">
                     <div class="forgotpwd ">
-                      <span><a tabindex="5">Forgot Password?</a></span>
+                      <span><a tabindex="5">Create new accaunt</a></span>
+                    </div>
+                  </div>
+
+                  <div id="kc-form-buttons" class="halfwidth submit">
+                    <div class="">
+                      <input tabindex="4" class="btn btn-primary btn-lg" name="login" id="kc-login" type="submit"
+                        value="Log in">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div id="kc-form-options" class="halfwidth">
+                    <div class="forgotpwd ">
+                      <span><a tabindex="5" style="color: rgb(79, 205, 255)">Back to site</a></span>
                     </div>
                   </div>
 
@@ -208,5 +223,5 @@
     </div>
   </div>
 </div>
-
-{% endblock %}
+<!-- 
+{% endblock %} -->
