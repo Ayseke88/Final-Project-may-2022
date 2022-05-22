@@ -28,10 +28,7 @@
     transform: translateY(0px);
     transition:.5s ease all;
 }
-.img-fluid{
-    min-height: 16rem;
-    max-height: 16rem;
-}
+
 
 .video-container {
     max-height: 41rem;
