@@ -90,9 +90,6 @@ class Basket:
         return total
 
     def delete(self, product):
-        """
-        Delete item from session data
-        """
         product_id = str(product)
 
         if product_id in self.basket:
@@ -100,7 +97,6 @@ class Basket:
             self.save()
 
     def clear(self):
-        # Remove basket from session
         del self.session[settings.BASKET_SESSION_ID]
         del self.session["address"]
         del self.session["purchase"]
