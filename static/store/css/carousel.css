@@ -8,7 +8,7 @@
 }
 
 .carousel-caption{
-    max-height: 30rem;
+    max-height: 10rem;
     background-color: rgba(0, 0, 0, 0.614);
     position: absolute;
     top: 43%;
