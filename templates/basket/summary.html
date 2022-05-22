@@ -7,9 +7,6 @@
   <div class="col-12">
     <h1 class="h2">Your Basket</h1>
   </div>
-  <div class="col-12">
-    <p>Manage your <b>items</b> in your basket</p>
-  </div>
   <hr />
 </div>
 <div class="container">
@@ -22,16 +19,14 @@
         <div class="pe-3">Orders</div>
       </div>
       <div class="text-end">
-        <div class="">Sub Total: <span class="fw-bold">$</span>
+        <div class="">Price without delivery: <span class="fw-bold">$</span>
           <div id="subtotal" class="d-inline-flex fw-bold">{{basket.get_subtotal_price}}</div>
         </div>
-        <div class="pt-2">Total to pay: <span class="fw-bold h5">$</span><span id="total"
-            class="fw-bold h5">{{basket.get_total_price}}</span></div>
       </div>
     </div>
-    <div class="col-md-5 col-lg-4 order-md-last p-0 order-3">
+    <div class="col align-self-end col-md-4 order-md-last p-4 order-3">
       <div class="d-grid gap-2 ">
-        <a role="button" href="{% url 'checkout:deliverychoices' %}" class="btn btn-success fw-bold" type="button">Checkout</a>
+        <a role="button" href="{% url 'checkout:deliverychoices' %}" class="btn btn-secondary btn-md" type="button">Checkout</a>
       </div>
     </div>
     <div class="col-md-7 col-lg-8 p-0">
