@@ -2,7 +2,27 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block sub_content %}
+{% load static %}
 
+<link rel="stylesheet" href="{% static 'store/css/space.css' %}">
+
+<div class="space"></div>
+<div class="main">
+</div>
+<style>
+  @media only screen and (max-width: 767px) {
+  .main {
+    min-height: 5.2rem;
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width: 288px) {
+  .main {
+    min-height: 7.1rem;
+    background: transparent;
+  }
+}</style>
 <div class="col-12">
   <h1 class="h2">Your Account</h1>
 </div>

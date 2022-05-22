@@ -20,4 +20,5 @@
     "**/templates/**/*": "django-txt",
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
+  "liveServer.settings.port": 5501,
 }

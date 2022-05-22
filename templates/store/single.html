@@ -5,7 +5,22 @@
 {% if product %}{{ product.title }}{% else %}Product{% endif %}
 {% endblock %}
 {% block content %}
+<div class="main">
+</div>
+<style>
+  @media only screen and (max-width: 767px) {
+  .main {
+    min-height: 5.2rem;
+    background: transparent;
+  }
+}
 
+@media only screen and (max-width: 288px) {
+  .main {
+    min-height: 7.1rem;
+    background: transparent;
+  }
+}</style>
 <div class="container">
   <main class="pt-5">
       <div class="row g-3">

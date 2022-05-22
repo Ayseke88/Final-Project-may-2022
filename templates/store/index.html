@@ -3,13 +3,21 @@
 {% block content %}
 
 {#DO NOT TOUCH IT  ///////////// DO NOT TOUCH IT  ///////////// DO NOT TOUCH IT #}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'store/css/home.css' %}">
+<div class="main">
+</div>
+{% comment %} The begining of video header {% endcomment %}
+
+{#DO NOT TOUCH IT ///////////// DO NOT TOUCH IT ///////////// DO NOT TOUCH IT #}
 <section class="video-container">
   <video src="media/headerHome.mp4" autoplay loop playsinline muted></video>
 
 </section>
 
 
-{#DO NOT TOUCH IT  ///////////// DO NOT TOUCH IT  ///////////// DO NOT TOUCH IT #}
+{#DO NOT TOUCH IT ///////////// DO NOT TOUCH IT ///////////// DO NOT TOUCH IT #}
 <style>
   .video-container {
     max-height: 41rem;
@@ -17,11 +25,8 @@
     overflow: hidden;
   }
 
-  .card-img-top {
-    width: 307px;
-    height: 307px;
-    object-fit: cover;
-  }
+
+
 
   video {
     object-fit: cover; // Set the magic
@@ -60,11 +65,13 @@
     }
   }
 </style>
+{#DO NOT TOUCH IT  ///////////// DO NOT TOUCH IT  ///////////// DO NOT TOUCH IT #}
 
-<div class="album py-5 bg-light">
+
+<div class="album py-5 bg-light" style="box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.5)">
   <div class="container">
 
-    <div class="row" >
+    <div class="row">
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
           <img class="card-img-top" src="media/retro.jpg" alt="Card image cap">
@@ -95,7 +102,8 @@
         <div class="card mb-4 box-shadow">
           <img class="card-img-top" src="media/camila.png" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Watc music clip with us! Just follow our youtube channel. The fastest reactions to your
+            <p class="card-text">Watc music clip with us! Just follow our youtube channel. The fastest reactions to
+              your
               pleasement.
               Everything for you!
             </p>
@@ -108,7 +116,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container" >
   <div class="container">
     <div class="row">
       <div class="album py-5">
