@@ -1,8 +1,8 @@
 
 
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    color: #2f3044;
+.h1, .h3, .h4, .h6, h3, h4, h5, h6 {
+    color: #ffff;
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 0.5rem;
@@ -67,16 +67,16 @@
   
   
   .block-dark {
-  background-color: #0d151e;
+  background-color: #0f1822;
+  /* background-image: linear-gradient(to top, #021326, #001128, #000f29, #000c2b, #00092c, #141c3b, #282c4b, #3c3d5c, #6a6982, #9a98aa, #cbcad4, #ffffff); */
+
   }
-  .dark-top-curved-bg {
-  background-image: url('https://keenthemes.com/images/misc/curve-dark-top-bg.png');
-  }		
+	
   
   .text-muted, .text-muted i {
   color: #e6e6ef;
   }		
-  .text-dark-60 {
+  .text-light {
   color: #bfc0c5;
   text-decoration: none;
   }		
@@ -112,3 +112,4 @@
     height: 225px;
   }	
   }
+

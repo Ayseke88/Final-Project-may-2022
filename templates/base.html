@@ -16,7 +16,11 @@
   <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
   <link rel="stylesheet" href="{% static 'store/css/home.css' %}">
   <link rel="stylesheet" href="{% static 'store/css/footer.css' %}">
+  <link rel="stylesheet" href="{% static 'store/js/script.js' %}">
+
   <link rel="stylesheet" href="{% block stylesheet %}{% endblock %}">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -126,15 +130,18 @@
     {% block content %}
 
     {% endblock %}
-  </div>
+  </div>\
+
+
+  
+  
 
 
 
 
 
 
-
-  <footer class="footer block-dark mt-n15 mt-lg-n30">
+  <footer style="margin-top: 10%; overflow:hidden;" class="footer block-dark mt-n15 mt-lg-n30">
 
     <div
       class="h-150px h-lg-225px bgi-no-repeat bgi-position-x-center bgi-position-y-top bgi-size-cover dark-top-curved-bg">
@@ -144,12 +151,12 @@
       <div class="row">
         <div class="col-6 col-lg">
           <div class="pb-10">
-            <h3 class="text-muted mb-5 mb-lg-7 font-size-4">Products</h3>
+            <h3 class="text mb-5 mb-lg-7 font-size-4">Products</h3>
 
             <div class="d-flex flex-column font-size-3 font-weight-bold">
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Pro
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Pro
                 Templates</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Free Templates</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Free Templates</a>
 
             </div>
           </div>
@@ -157,67 +164,67 @@
 
         <div class="col-6 col-lg">
           <div class="pb-10">
-            <h3 class="text-muted mb-5 mb-lg-7 font-size-4">Learn</h3>
+            <h3 class="text mb-5 mb-lg-7 font-size-4">Learn</h3>
 
             <div class="d-flex flex-column font-size-3 font-weight-bold">
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">All
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">All
                 Tutorials</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Metronic Tutorials</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Keen Tutorials</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Blog &amp; News</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Hire Experts</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Metronic Tutorials</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Keen Tutorials</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Blog &amp; News</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Hire Experts</a>
             </div>
           </div>
         </div>
 
         <div class="col-6 col-lg">
           <div class="pb-10">
-            <h3 class="text-muted mb-5 mb-lg-7 font-size-4">Resources</h3>
+            <h3 class="text mb-5 mb-lg-7 font-size-4">Resources</h3>
 
             <div class="d-flex flex-column font-size-3 font-weight-bold">
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">FAQs</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Support</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Contact Us</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Affiliate Program</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">FAQs</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Support</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Contact Us</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Affiliate Program</a>
             </div>
           </div>
         </div>
 
         <div class="col-6 col-lg">
           <div class="pb-10">
-            <h3 class="text-muted mb-5 mb-lg-7 font-size-4">General</h3>
+            <h3 class="text mb-5 mb-lg-7 font-size-4">General</h3>
 
             <div class="d-flex flex-column font-size-3 font-weight-bold">
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">License Terms</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Privacy Policy</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Terms &amp; Conditions</a>
-              <a href="" class="text-dark-60 text-hover-primary py-2 py-lg-3">Refund Policy</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">License Terms</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Privacy Policy</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Terms &amp; Conditions</a>
+              <a href="" class="text-light text-hover-primary py-2 py-lg-3">Refund Policy</a>
             </div>
           </div>
         </div>
 
         <div class="col-6 col-lg">
           <div class="pb-10">
-            <h3 class="text-muted mb-5 mb-lg-7 font-size-4">Stay Connected</h3>
+            <h3 class="text mb-5 mb-lg-7 font-size-4">Stay Connected</h3>
 
             <div class="d-flex flex-column font-size-3 font-weight-bold">
-              <a href="" class="d-flex align-items-center text-center text-dark-60 text-hover-primary py-2 py-lg-3">
+              <a href="" class="d-flex align-items-center text-center text-light text-hover-primary py-2 py-lg-3">
                 <img src="" data-lazy-src="" class="w-20px mr-4 loaded" alt="">
                 Facebook
               </a>
-              <a href="" class="d-flex align-items-center text-center text-dark-60 text-hover-primary py-2 py-lg-3">
+              <a href="" class="d-flex align-items-center text-center text-light text-hover-primary py-2 py-lg-3">
                 <img src="" data-lazy-src="" class="w-20px mr-4 loaded" alt="">
                 Twitter
               </a>
-              <a href="" class="d-flex align-items-center text-center text-dark-60 text-hover-primary py-2 py-lg-3">
+              <a href="" class="d-flex align-items-center text-center text-light text-hover-primary py-2 py-lg-3">
                 <img src="" data-lazy-src="" class="w-20px mr-4 loaded" alt="">
                 Dribbble
               </a>
-              <a href="" class="d-flex align-items-center text-center text-dark-60 text-hover-primary py-2 py-lg-3">
+              <a href="" class="d-flex align-items-center text-center text-light text-hover-primary py-2 py-lg-3">
                 <img src="" class="w-20px mr-4 loaded" data-lazy-src="" alt="">
                 Instagram
               </a>
-              <a href="" class="d-flex align-items-center text-center text-dark-60 text-hover-primary py-2 py-lg-3">
+              <a href="" class="d-flex align-items-center text-center text-light text-hover-primary py-2 py-lg-3">
                 <img src="" class="w-20px mr-4 loaded" data-lazy-src="" alt="">
                 Github
               </a>
@@ -235,7 +242,7 @@
 
 
 
-          <span class="font-size-2 font-weight-bold text-dark-60 pt-1" href="">
+          <span class="font-size-2 font-weight-bold text-light pt-1" href="">
             © 2022 Paradise Music.com
           </span>
 
@@ -243,7 +250,7 @@
 
         <div
           class="d-flex flex-column flex-md-row align-items-center justify-content-center order-1 order-md-2 mb-5 mb-md-0">
-          <div class="font-size-2 font-weight-bold text-dark-60 mb-5 mb-md-0">
+          <div class="font-size-2 font-weight-bold text-light mb-5 mb-md-0">
             Secured Payment by <a href="" target="_blank" class="text-dark-50 text-hover-primary">PayPal</a>
           </div>
 
@@ -260,6 +267,9 @@
       </div>
     </div>
   </footer>
+
+  
+
 </body>
 
 </html>
