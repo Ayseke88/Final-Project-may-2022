@@ -3,7 +3,7 @@
 {% block title %}Basket Summary{%endblock %}
 {% block content %}
 
-<div class="container">
+<div class="container" style="margin-top:100px;">
   <div class="col-12">
     <h1 class="h2">Delivery Address</h1>
   </div>
@@ -20,7 +20,7 @@
     <div class="col-12">There are no delivery addresses, <a href="{% url 'account:add_address' %}">add address</a></div>
     {% else %}
     <div class="col-md-4 col-lg-4 order-md-last p-0 order-3" style="margin-top:-30px;" >
-      <hr />
+      <hr / style="margin-top:-15px;">
 <div class="d-flex bd-highlight ms-0"  >
   <div class="p-2 flex-grow-1 bd-highlight">Sub Total:</div>
   <div class="p-2 bd-highlight"><span class="fw-bold h5">£</span><span id="sub_total"class="fw-bold h5">{{basket.get_subtotal_price}}</span></div>
@@ -74,6 +74,12 @@
     {% endif %}
   </div>
 
+  <img class="" src="/media/address.jpg" width="380px" alt="Responsive image" style="margin-top:-470px; 
+  margin-left:600px;"/>  
+                 
+
 </div>
+
+
 
 {% endblock %}
