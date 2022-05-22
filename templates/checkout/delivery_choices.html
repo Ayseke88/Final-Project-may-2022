@@ -3,7 +3,7 @@
 {% block title %}Delivery Options{%endblock %}
 {% block content %}
 
-<div class="container">
+<div class="container" style="margin-top:100px;">
   <div class="col-12">
     <h1 class="h2">Delivery Options</h1>
   </div>
@@ -62,10 +62,29 @@
           class="fw-bold h5">{{basket.get_total_price}}</span></div>
     </div>
     <a role="button" href="{% url "checkout:delivery_address" %}" class="p-2 btn btn-secondary w-50 "
-      type="button">Select the address</a>
+      type="button" style="margin-top:10px;">Select the address</a>
   </div>
 </div>
+
+<div class="col-4" style="text-align:left; margin-top: -530px; margin-left:700px;">
+<div class="d-grid ">
+      <h2 class="p-2 flex-grow-2 ">Delivery Guarantees</h2>
+      <div class="col-12">
+        <p style="margin-left:10px;">Read more about guarantees</p>
+      </div>
+      <p class="ps-2 pb-3" style="margin-top:10px;">We offer guaranteed delivery on certain delivery speeds and select products. When guaranteed delivery is available on an order, we'll state this on the checkout page, with the associated delivery date and cost.
+
+        If we provide a guaranteed delivery date and a delivery attempt isn't made by this date, we'll refund any shipping fees associated with that order.
+        
+        The "order within" countdown timer provides the window of time in which you must place the order to receive
+         your delivery by the date shown. The delivery day may become unavailable within that timeframe due to changes in inventory or delivery capacity before you place your order. Your confirmed delivery date is in your order confirmation email.</p>
+    </div>
+  </div>
 {% endif %}
+
+
+
+
 <script>
   $('input[type=radio][name=deliveryOption]').on('change', function(e) {
     e.preventDefault();
