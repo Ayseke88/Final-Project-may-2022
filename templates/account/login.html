@@ -1,23 +1,34 @@
-{% extends "./sub_base.html" %}
+<!-- {% extends "./sub_base.html" %}
 {% block title %}Log-in{% endblock %}
-{% block sub_content %}
+{% block sub_content %} -->
+
+<link rel="stylesheet" href="/static/account/css/login.css">
+<script src="/static/account/css/login.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+
 <div class="main">
 </div>
 <style>
   @media only screen and (max-width: 767px) {
-  .main {
-    min-height: 5.2rem;
-    background: transparent;
+    .main {
+      min-height: 5.2rem;
+      background: transparent;
+    }
   }
-}
 
-@media only screen and (max-width: 288px) {
-  .main {
-    min-height: 7.1rem;
-    background: transparent;
+  @media only screen and (max-width: 288px) {
+    .main {
+      min-height: 7.1rem;
+      background: transparent;
+    }
   }
-}</style>
-<form class="account-form" action="{% url 'account:login' %}" method="post">
+</style>
+<!-- <form class="account-form" action="{% url 'account:login' %}" method="post">
   {% csrf_token %}
   <h3 class="mb-4">Sign In</h3>
   {% if form.errors %}
@@ -37,6 +48,92 @@
   <div class="flex-column justify-content-center mx-auto pb-3">
     <div class="text-center"><a href="{% url "account:register" %}">Create an account</a></div>
   </div>
-</form>
+</form> -->
 
-{% endblock %}
+
+<div id="kc-logo">
+  <div id="kc-logo-wrapper"></div>
+  </a>
+</div>
+
+<div id="kc-container" class="">
+  <div id="kc-container-wrapper" class="">
+    <div id="kc-container-wrapperrel" class="">
+
+      <div id="kc-header" class="col-xs-12 col-sm-8 col-md-8 col-lg-7">
+        <div id="kc-header-wrapper" class="">
+          <div class="kc-logo-text"><span>Keycloak</span></div>
+          <div id="backgroundheaderlogin">test</div>
+        </div>
+      </div>
+
+
+      <div id="kc-content" class=" container">
+        <div id="kc-content-wrapper" class="row">
+          <div id="kc-form" class="col-xs-12 col-sm-8 col-md-8 col-lg-7 login">
+            <div id="kc-form-wrapper" class="">
+              <div class="animlogin">
+              </div>
+              <form id="kc-form-login" class="form-horizontal" onsubmit="login.disabled = true; return true;" action="#"
+                method="post">
+                {% csrf_token %}
+                <div class="form-group">
+
+
+                  <div class="fullwidth">
+                    <label for="username" class="control-label">Username or email</label>
+                    <input tabindex="1" id="username" class="form-control" name="username" value="" type="text"
+                      autofocus="" autocomplete="off">
+                  </div>
+                </div>
+
+                <div class="form-group">
+
+                  <div class="fullwidth">
+                    <label for="password" class="control-label">Password</label>
+                    <input tabindex="2" id="password" class="form-control" name="password" type="password"
+                      autocomplete="off">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div id="kc-form-options" class="halfwidth">
+                    <div class="forgotpwd ">
+                      <span><a tabindex="5">Create new accaunt</a></span>
+                    </div>
+                  </div>
+
+                  <div id="kc-form-buttons" class="halfwidth submit">
+                    <div class="">
+                      <input tabindex="4" class="btn btn-primary btn-lg" name="login" id="kc-login" type="submit"
+                        value="Log in">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div id="kc-form-options" class="halfwidth">
+                    <div class="forgotpwd ">
+                      <span><a tabindex="5" style="color: rgb(79, 205, 255)">Back to site</a></span>
+                    </div>
+                  </div>
+
+                  <div id="kc-form-buttons" class="halfwidth submit">
+                    <div class="">
+                      <input tabindex="4" class="btn btn-primary btn-lg" name="login" id="kc-login" type="submit"
+                        value="Log in">
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+{% endblock %} -->

@@ -84,7 +84,7 @@ div#kc-container-wrapper {
     margin-left: 50%;
     /* position: absolute; */
     width: 365px;
-    height: 300px;
+    height: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);

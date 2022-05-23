@@ -1,56 +1,115 @@
-{% extends "../sub_base.html" %}
-{% block title %}Register Account{% endblock %}
-{% block sub_content %}
+<link rel="stylesheet" href="/static/account/css/reg.css">
+<script src="/static/account/css/login.js"></script>
 
-<div class="container-fluid">
-  <div class="row no-gutter">
-      <div class="col-md-12">
-          <div class="login d-flex align-items-center py-5">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-12 col-lg-7  mx-auto">
-                           <form class="account-form p-4 rounded col-lg-10 mx-auto" action="." method="post">
-                              {% csrf_token %}
-                              <h3 class="mb-2 font-weight-bold">Create an account</h3>
-                              
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
-                              {% if form.errors %}
-                              <p>Please correct the following errors:</p>
-                              {% for field in form %}
-                              {% if field.errors %}
-                              <div class="alert alert-primary" role="alert">
-                                  {{ field.label }}: {{ field.errors|striptags }}
-                              </div>
-                              {% endif %}
-                              {% endfor %}
-                              {% endif %}
-
-                              <label>{{ form.user_name.label }}<span class="text-muted small">
-                                      (Required)</span></label>
-                              {{ form.user_name }}
-                              <label>{{ form.email.label}}<span class="text-muted small">
-                                      (Required)</span></label>
-                              {{ form.email }}
-                              <label>{{ form.password.label}}<span class="text-muted mb-4">
-                                      </span></label>
-                               <small class="form-text text-muted mb-4 small">
-                                  At least 8 characters and 1 digit
-                              </small>
-                              {{ form.password }}
-                              <label>{{ form.password2.label}}<span class="text-muted small">
-                                      (Required)</span></label>
-                              {{ form.password2 }}
-                              <button class="btn btn-primary btn-block py-2 mb-4 mt-5 fw500 w-100" type="submit">Register</button>
-                              <p class="text-center">
-                                  <a href="{% url "account:login" %}">Already have an account?</a>
-                              </p>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+<div id="kc-logo">
+    <div id="kc-logo-wrapper"></div>
+    </a>
 </div>
 
-{% endblock %}
+<div id="kc-container" class="">
+    <div id="kc-container-wrapper" class="">
+        <div id="kc-container-wrapperrel" class="">
+
+            <div id="kc-header" class="col-xs-12 col-sm-8 col-md-8 col-lg-7">
+                <div id="kc-header-wrapper" class="">
+                    <div class="kc-logo-text"><span>Keycloak</span></div>
+                    <div id="backgroundheaderlogin">test</div>
+                </div>
+            </div>
+
+
+            <div id="kc-content" class=" container">
+                <div id="kc-content-wrapper" class="row">
+                    <div id="kc-form" class="col-xs-12 col-sm-8 col-md-8 col-lg-7 login">
+                        <div id="kc-form-wrapper" class="">
+                            <div class="animlogin">
+                            </div>
+                            <form id="kc-form-login" class="form-horizontal"
+                                onsubmit="login.disabled = true; return true;" action="#" method="post">
+                                <div class="form-group">
+
+
+                                    <div class="fullwidth">
+                                        <label for="username" class="control-label">Username</label>
+                                        <input tabindex="1" id="username" class="form-control" name="username" value=""
+                                            type="text" autofocus="" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+
+
+                                    <div class="fullwidth">
+                                        <label for="email" class="control-label">Email</label>
+                                        <input tabindex="1" id="email" class="form-control" name="email" value=""
+                                            type="text" autofocus="" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+
+                                    <div class="fullwidth">
+                                        <label for="password" class="control-label">Password</label>
+                                        <input tabindex="2" id="password" class="form-control" name="password"
+                                            type="password" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+
+                                    <div class="fullwidth">
+                                        <label for="password" class="control-label">Repeat password</label>
+                                        <input tabindex="2" id="password" class="form-control" name="password"
+                                            type="password" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div id="kc-form-options" class="halfwidth">
+                                        <div class="forgotpwd ">
+                                            <span><a tabindex="5" style="color: rgb(79, 205, 255)">Already have an
+                                                    account?</a></span>
+                                        </div>
+                                    </div>
+
+                                    <div id="kc-form-buttons" class="halfwidth submit">
+                                        <div class="">
+                                            <input tabindex="4" class="btn btn-primary btn-lg" name="login"
+                                                id="kc-login" type="submit" value="Log in">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" style="margin-bottom: 3%;">
+                                    <div id="kc-form-options" class="halfwidth">
+                                        <div class="forgotpwd ">
+                                            <span><a tabindex="5" style="color: rgb(79, 205, 255)">Back to
+                                                    site</a></span>
+                                        </div>
+                                    </div>
+
+                                    <div id="kc-form-buttons" class="halfwidth submit">
+                                        <div class="">
+                                            <input tabindex="4" class="btn btn-primary btn-lg" name="login"
+                                                id="kc-login" type="submit" value="Log in">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="kc-form-buttons" class="halfwidth submit">
+                                    <div class="">
+                                        <input tabindex="4" class="btn btn-primary btn-lg" name="login" id="kc-login"
+                                            type="submit" value="Sign up">
+                                    </div>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
