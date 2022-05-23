@@ -26,3 +26,6 @@ def product_detail(request, slug):
 
 def about(request):
     return render(request, "store/about.html")
+
+def index(request):
+    return render(request, "store/index.html")
