@@ -53,11 +53,6 @@
           </ul>
         </div>
 
-        <form class="d-flex w-100 d-md-none">
-          <input class="form-control me-2" type="search" placeholder="Search products or FAQ" aria-label="Search">
-          <button class="btn btn-outline-secondary" type="submit">Search</button>
-        </form>
-
         {% if user.is_authenticated %}
         <a type="button" role="button" href="{% url "account:logout" %}"
           class="btn btn-outline-secondary border-0 basket-btn">
