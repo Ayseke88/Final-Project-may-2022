@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Rosario|Russo+One");
+* {
+    color: #0f203c;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Russo One", sans-serif;
+}
+
+.containHeader {
+    position: relative;
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    font-family: "Russo One", sans-serif;
+    text-align: center;
+}
+
+.containHeader .headImg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1543422318-7e6664bdba68?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1202);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containHeader .screen {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.containHeader .containText {
+    position: relative;
+    z-index: 2;
+    margin: 100px auto;
+}
+
+.containHeader .containText h1,
+.containHeader .containText h3 {
+    margin: 0;
+    color: white;
+}
+
+.containHeader .containText h1 {
+    font-size: 60px;
+}
+
+.containHeader .containText h3 {
+    font-size: 40px;
+    margin-left: -180px;
+}
+
+.secOne {
+    position: relative;
+}
+
+.secOne .containText {
+    width: 40%;
+    margin: auto;
+}
+
+.secOne .containText .textGroup {
+    margin: 50px 0;
+}
+
+.secOne .containText .textGroup inline {
+    font-size: large;
+}
+
+.secOne .containText .textGroup h2,
+.secOne .containText .textGroup h4 {
+    margin-bottom: 10px;
+}
+
+.secOne .containText .containImg {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    background: grey;
+}
+
+.secOne .containText .containImg .frank {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1531060504220-d30bebf3daaf?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containAngle {
+    position: relative;
+    display: flex;
+    height: 120px;
+    background: lightgray;
+    -webkit-clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.containAngle .angleImg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1512486469188-9a1edfa123fa?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.containAngle .screen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.containAngle h2 {
+    position: relative;
+    color: white;
+    margin: 60px auto;
+}
+
+.secTwo {
+    position: relative;
+    padding: 100px 0 50px 0;
+    width: 550px;
+    margin: auto;
+}
+
+.secTwo iframe {
+    position: relative;
+    padding: 0 0 30px 0;
+    margin: auto;
+    width: 550px;
+    height: 350px;
+}
+
+.secThree {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.secThree .imgOne {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    background-image: url(https://images.unsplash.com/photo-1512486469188-9a1edfa123fa?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secThree .screen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.secThree .containText {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    font-family: "Quicksand", sans-serif;
+}
+
+.secThree .containText h1,
+.secThree .containText p {
+    color: white;
+}
+
+.secThree .containText h1 {
+    font-family: "Quicksand", sans-serif;
+}
+
+.secThree .containText h1 inline {
+    color: white;
+    font-size: 50px;
+}
+
+.secFour {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.secFour .containText {
+    width: 50%;
+    margin: auto;
+}
+
+.secFour .containComments {
+    position: relative;
+    display: grid;
+    grid-template: repeat(2, 1fr)/1fr;
+    grid-gap: 10px;
+    padding: 25px 0 0 0;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.secFour .containComments .commentGroup {
+    width: 100%;
+}
+
+.secFour .containComments .commentGroup iframe {
+    position: relative;
+    width: 500px;
+    height: 162px;
+    left: 50%;
+    margin-left: -250px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.65);
+}
