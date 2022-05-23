@@ -192,9 +192,9 @@
         {% if not products %}
         <div class="col-12">There are currently no products active</div>
         {% else %}
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
           {% for product in products %}
-          <div class="col">
+          <div class="row-8">
             <div class="card border-0">
               {% for image in product.product_image.all %}
               {% if image.is_feature%}
