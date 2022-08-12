@@ -13,7 +13,7 @@
  <div class="container">
     {% for order in orders %}
     <div class="row g-3">
-      <div class="col-12 bg-dark k p-3 d-flex justify-content-between">
+      <div class="col-12 bg-light k p-3 d-flex justify-content-between">
         <div class="d-flex d-flex-inline">
           <h6 class="pe-3">{{ order.created }}</h6>  
             <h6 class="pe-3">   {{order.full_name}}   </h6>
@@ -32,6 +32,7 @@
         <div class="card mb-3 border-0">
           <div class="row g-0">
             <div class="col-md-2 d-none d-md-block">
+              
             {% for image in item.product.product_image.all %}
             {% if image.is_feature %}
             <img class="img-fluid" alt="Responsive image" src="{{ image.image.url }}" alt="{{ image.image.alt_text }}">
